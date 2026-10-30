@@ -64,4 +64,9 @@ class Players extends NativeComponent
         $this->feedbackMessage = 'Player removed from your squad.';
         $this->feedbackIsError = false;
     }
+
+    public function openScorebook(): void
+    {
+        $this->navigate('/');
+    }
 }

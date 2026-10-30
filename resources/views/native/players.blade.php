@@ -9,6 +9,7 @@
             <native:column class="items-end gap-1">
                 <native:text class="text-2xl font-bold text-theme-primary">{{ $players->count() }}</native:text>
                 <native:text class="text-xs text-theme-on-surface-variant">players</native:text>
+                <native:button label="Scorebook" variant="secondary" @press="openScorebook" />
             </native:column>
         </native:row>
 
@@ -17,7 +18,7 @@
 
             <native:outlined-text-input
                 label="Player name"
-                placeholder="e.g. Arjun Sharma"
+                placeholder="e.g. Gaurav "
                 native:model.blur="playerName"
             />
 
